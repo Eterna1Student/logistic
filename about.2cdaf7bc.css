@@ -973,7 +973,6 @@ h1 {
 .modal__wrap {
   justify-content: center;
   width: 100%;
-  height: 100vh;
   display: none;
   position: fixed;
   top: 0;
@@ -983,7 +982,6 @@ h1 {
 .modal__wrap_active {
   justify-content: center;
   width: 100%;
-  height: 100vh;
   display: flex;
   position: absolute;
   top: 0;
@@ -995,9 +993,11 @@ h1 {
   background-color: #f6f3ee;
   width: 100%;
   max-width: 1129px;
+  height: 90%;
   padding: 69px 112px 34px 69px;
   position: fixed;
   top: 50px;
+  overflow-y: auto;
   box-shadow: 0 1px 20px -5px #223c504d;
 }
 
@@ -1141,6 +1141,7 @@ h1 {
   align-items: center;
   gap: 30px;
   width: 51%;
+  height: 77px;
   font-family: Marcellus SC;
   font-size: 12px;
   font-weight: 400;
