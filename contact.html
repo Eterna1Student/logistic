@@ -17,7 +17,7 @@
           <li><a href="/HowtoBook.html">How to Book</a></li>
         </ul>
         <a href="/index.html"><img class="header__logo" src="/Logo.22c90160.svg" alt="logo"></a>
-        <a href="/contact.html" class="nav__cta" style="margin-bottom: 3px">Order now</a>
+        <button href="contact.html" class="nav__cta form__btn" style="margin-bottom: 3px">Order now</button>
       </nav>
     </header>
     <main>
@@ -170,7 +170,7 @@
             <label for="to">To</label>
             <input type="text" id="to">
           </div>
-          <button class="search__btn">Next</button>
+          <button class="search__btn form__btn">Next</button>
         </form>
         <h1 class="large_text_logo">Logistics solutions</h1>
       </section>
@@ -226,6 +226,69 @@
         </footer>
       </div>
     </main>
+    <div class="modal__wrap">
+      <div class="modal__content">
+        <h4 class="modal__title">Fill In The Fields Now</h4>
+        <form action="#">
+          <div class="modal__inputs">
+            <input class="input__truck" id="fromInput" type="text" placeholder="From">
+            <input class="input__truck" id="toInput" type="text" placeholder="To">
+          </div>
+
+          <div class="modal__btns">
+            <button class="modal__btn">+ ADD FLIGHTS</button>
+            <button class="modal__btn modal__btn_green">DELETE FLIGHTS</button>
+          </div>
+
+          <div class="modal__cubTitles">
+            <h5>Specify Details</h5>
+            <h5>Your Details</h5>
+          </div>
+
+          <div class="modal__inputs">
+            <input class="input__gold" id="barsInput" type="text" placeholder="Gold bars">
+            <input class="input__people" id="firstnameInput" type="text" placeholder="First Name*">
+          </div>
+
+          <div class="modal__inputs">
+            <input class="input__kg" id="kgInput" type="text" placeholder="10 (In kilograms)">
+            <input class="input__people" id="lastnameInput" type="text" placeholder="Last Name*">
+          </div>
+
+          <div class="modal__inputs">
+            <input class="input__cube" id="cubInput" type="text" placeholder="10 (In cubic meters)">
+            <input class="input__mail" id="emailInput" type="text" placeholder="Email*">
+          </div>
+
+          <div class="modal__inputs">
+            <label class="modal__checkbox">
+              <input type="checkbox" id="check">
+              I AGREE TO THE TERMS AND CONDITIONS
+            </label>
+            <input class="modal__tel" id="phoneInput" type="tel" placeholder="Phone*">
+          </div>
+          <div class="modal__footer">
+            <span class="modal__error modal__error_hidden"></span>
+            <button class="modal__submit" type="submit">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal__message">
+      <div class="modal__content modal__message_content">
+        <h4 class="modal__title modal__message_title">
+          Thank you for your request
+          <div class="modal__message_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewbox="0 0 19 19" fill="none">
+              <path d="M19 2.71976L16.2802 0L9.5 6.7994L2.71976 0L0 2.71976L6.7994 9.5L0 16.2802L2.71976 19L9.5 12.2006L16.2802 19L19 16.2802L12.2006 9.5L19 2.71976Z" fill="#444444"></path>
+            </svg>
+          </div>
+        </h4>
+        <p class="modal__text">We are glad that you have trusted our company. Our international shipping team is currently reviewing your request and will contact you shortly to discuss the next steps.</p>
+        <p class="modal__text">If your request for cargo transportation is urgent and you plan to ship the cargo within the next 24 hours, call us at +7 (999) 999 99 99.</p>
+      </div>
+    </div>
     <script src="/contact.ccaf797c.js" defer=""></script>
+    <script src="/about.da93fc4e.js" defer=""></script>
   </body>
 </html>

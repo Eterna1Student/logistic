@@ -67,6 +67,7 @@ header {
   cursor: pointer;
   background-color: #1b3718;
   padding: 14px 37px;
+  font-size: 16px;
   line-height: 16px;
   transition: all .5s;
 }
@@ -324,6 +325,10 @@ h1 {
   max-width: 462px;
 }
 
+.input__group > svg {
+  min-width: 28px;
+}
+
 .shippinginfo__form label {
   color: #000;
   font-size: 14px;
@@ -355,9 +360,14 @@ h1 {
   font-style: normal;
   font-weight: 500;
   line-height: 185px;
+  transition: bottom 1s ease-in-out;
   position: absolute;
   bottom: -90px;
   left: 15%;
+}
+
+.large_text_logo_transition {
+  bottom: 0;
 }
 
 .footer__wrapper {
@@ -478,11 +488,17 @@ h1 {
 
 .scrolldown {
   cursor: pointer;
-  transition: all .3s ease-in;
+  animation: 3s linear infinite rotate;
 }
 
-.scrolldown:hover {
-  transform: rotate(180deg);
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .HowtoBook_main {
@@ -598,6 +614,7 @@ h1 {
 }
 
 .secondary_btn {
+  cursor: pointer;
   text-align: center;
   letter-spacing: .15em;
   color: #000;
@@ -988,26 +1005,70 @@ h1 {
   left: 0;
 }
 
+.modal__message {
+  justify-content: center;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal__message_active {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .modal__content {
   z-index: 120;
   background-color: #f6f3ee;
   width: 100%;
   max-width: 1129px;
-  height: 90%;
-  padding: 69px 112px 34px 69px;
+  height: auto;
+  padding: 40px;
   position: fixed;
   top: 50px;
   overflow-y: auto;
   box-shadow: 0 1px 20px -5px #223c504d;
 }
 
+.modal__message_content {
+  max-width: 1500px;
+  height: 40%;
+  margin: 0 30px;
+  top: calc(100vh - 70%);
+}
+
+.modal__message_title {
+  font-size: 48px;
+  position: relative;
+}
+
+.modal__message_close {
+  cursor: pointer;
+  position: absolute;
+  top: -35px;
+  right: -20px;
+}
+
+.modal__text {
+  margin-top: 30px;
+  font-family: Marcellus;
+  font-size: 18px;
+}
+
 .modal__title {
   color: #000;
-  margin-bottom: 69px;
+  margin-bottom: 50px;
   font-family: Marcellus SC;
   font-size: 40px;
   font-weight: 400;
   line-height: 49px;
+  position: relative;
 }
 
 .modal__inputs {
@@ -1047,7 +1108,7 @@ h1 {
 .modal__btns {
   justify-content: flex-end;
   gap: 7px;
-  margin-bottom: 59px;
+  margin-bottom: 40px;
   display: flex;
 }
 
@@ -1166,6 +1227,16 @@ h1 {
   width: 49.9% !important;
 }
 
+.modal__footer {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.modal__error {
+  color: red;
+}
+
 .modal__submit {
   color: #fff;
   letter-spacing: .15em;
@@ -1173,7 +1244,6 @@ h1 {
   background: #1b3718;
   border: 1px solid #000;
   outline: none;
-  margin-left: auto;
   padding: 15px 70px;
   font-family: Kaisei Decol;
   font-size: 14px;

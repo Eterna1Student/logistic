@@ -16,7 +16,7 @@
           <li><a href="/HowtoBook.html">How to Book</a></li>
         </ul>
         <a href="/index.html"><img class="header__logo" src="/Logo.22c90160.svg" alt="logo"></a>
-        <a href="/contact.html" class="nav__cta">Order now</a>
+        <button href="contact.html" class="nav__cta form__btn">Order now</button>
       </nav>
     </header>
     <main>
@@ -54,7 +54,7 @@
             <label for="to">To</label>
             <input type="text" id="to">
           </div>
-          <button class="search__btn" id="search__btn">Next</button>
+          <button class="search__btn form__btn" id="search__btn">Next</button>
         </form>
       </div>
       <section class="shipping">
@@ -213,10 +213,11 @@
             <label for="to">To</label>
             <input type="text">
           </div>
-          <button class="search__btn">Next</button>
+          <button class="search__btn form__btn">Next</button>
         </form>
         <h1 class="large_text_logo">Logistics solutions</h1>
       </section>
+
       <div class="footer__wrapper">
         <footer class="footer">
           <div class="left__col">
@@ -265,11 +266,17 @@
     </main>
     <div class="modal__wrap">
       <div class="modal__content">
-        <h4 class="modal__title">Fill In The Fields Now</h4>
+        <h4 class="modal__title">Fill In The Fields Now
+          <div class="modal__message_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewbox="0 0 19 19" fill="none">
+              <path d="M19 2.71976L16.2802 0L9.5 6.7994L2.71976 0L0 2.71976L6.7994 9.5L0 16.2802L2.71976 19L9.5 12.2006L16.2802 19L19 16.2802L12.2006 9.5L19 2.71976Z" fill="#444444"></path>
+            </svg>
+          </div>
+        </h4>
         <form action="#">
           <div class="modal__inputs">
-            <input class="input__truck" type="text" placeholder="From">
-            <input class="input__truck" type="text" placeholder="To">
+            <input class="input__truck" id="fromInput" type="text" placeholder="From">
+            <input class="input__truck" id="toInput" type="text" placeholder="To">
           </div>
 
           <div class="modal__btns">
@@ -283,18 +290,18 @@
           </div>
 
           <div class="modal__inputs">
-            <input class="input__gold" type="text" placeholder="Gold bars">
-            <input class="input__people" type="text" placeholder="First Name*">
+            <input class="input__gold" id="barsInput" type="text" placeholder="Gold bars">
+            <input class="input__people" id="firstnameInput" type="text" placeholder="First Name*">
           </div>
 
           <div class="modal__inputs">
-            <input class="input__kg" type="text" placeholder="10 (In kilograms)">
-            <input class="input__people" type="text" placeholder="Last Name*">
+            <input class="input__kg" id="kgInput" type="text" placeholder="10 (In kilograms)">
+            <input class="input__people" id="lastnameInput" type="text" placeholder="Last Name*">
           </div>
 
           <div class="modal__inputs">
-            <input class="input__cube" type="text" placeholder="10 (In cubic meters)">
-            <input class="input__mail" type="text" placeholder="Email*">
+            <input class="input__cube" id="cubInput" type="text" placeholder="10 (In cubic meters)">
+            <input class="input__mail" id="emailInput" type="text" placeholder="Email*">
           </div>
 
           <div class="modal__inputs">
@@ -302,14 +309,31 @@
               <input type="checkbox" id="check">
               I AGREE TO THE TERMS AND CONDITIONS
             </label>
-            <input class="modal__tel" type="tel" placeholder="Phone*">
+            <input class="modal__tel" id="phoneInput" type="tel" placeholder="Phone*">
           </div>
-          <button class="modal__submit" type="submit">SUBMIT</button>
+          <div class="modal__footer">
+            <span class="modal__error modal__error_hidden"></span>
+            <button class="modal__submit" type="submit">SUBMIT</button>
+          </div>
         </form>
       </div>
     </div>
-    <script src="/index.f67df751.js"></script>
-  <script src="/logistic.59712999.js"></script></body>
+    <div class="modal__message">
+      <div class="modal__content modal__message_content">
+        <h4 class="modal__title modal__message_title">
+          Thank you for your request
+          <div class="modal__message_close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewbox="0 0 19 19" fill="none">
+              <path d="M19 2.71976L16.2802 0L9.5 6.7994L2.71976 0L0 2.71976L6.7994 9.5L0 16.2802L2.71976 19L9.5 12.2006L16.2802 19L19 16.2802L12.2006 9.5L19 2.71976Z" fill="#444444"></path>
+            </svg>
+          </div>
+        </h4>
+        <p class="modal__text">We are glad that you have trusted our company. Our international shipping team is currently reviewing your request and will contact you shortly to discuss the next steps.</p>
+        <p class="modal__text">If your request for cargo transportation is urgent and you plan to ship the cargo within the next 24 hours, call us at +7 (999) 999 99 99.</p>
+      </div>
+    </div>
+    <script src="/about.da93fc4e.js" defer=""></script>
+  </body>
 </html>
 
 

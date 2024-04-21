@@ -588,7 +588,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _browser = require("@emailjs/browser");
 var _browserDefault = parcelHelpers.interopDefault(_browser);
 (function() {
-    (0, _browserDefault.default).init("_CUHTE2PLvKInBQL5");
+    (0, _browserDefault.default).init("9KIqZu8puE7cf43kI");
 })();
 function validate() {
     let email = document.querySelector("#email");
@@ -613,7 +613,7 @@ function validate() {
 }
 validate();
 function sendmail(email, phone, firstname, lastname, message) {
-    (0, _browserDefault.default).send("service_kpwmszf", "template_1zu1mij", {
+    (0, _browserDefault.default).send("service_j9lpotb", "template_q0jaswv", {
         email: email,
         phone: phone,
         firstname: firstname,
