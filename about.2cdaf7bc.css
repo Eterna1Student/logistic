@@ -140,6 +140,7 @@ h1 {
 }
 
 .search {
+  z-index: 10;
   background-color: #fff;
   justify-content: space-between;
   align-items: center;
@@ -162,7 +163,7 @@ h1 {
   display: flex;
 }
 
-.input__group label {
+.input__group > input::placeholder {
   color: #9ca3af;
   text-shadow: 0 4px 4px #00000040;
   font-family: Marcellus SC, serif;
@@ -186,7 +187,7 @@ h1 {
   border: none;
   outline: none;
   width: 178px;
-  height: 77px;
+  height: 78px;
   font-size: 14px;
   transition: all .5s;
 }
@@ -321,7 +322,7 @@ h1 {
 }
 
 .shippinginfo__form .input__group {
-  gap: 30px;
+  gap: 10px;
   max-width: 462px;
 }
 
@@ -360,7 +361,7 @@ h1 {
   font-style: normal;
   font-weight: 500;
   line-height: 185px;
-  transition: bottom 1s ease-in-out;
+  transition: bottom 1.5s ease-in-out;
   position: absolute;
   bottom: -90px;
   left: 15%;
@@ -470,7 +471,7 @@ h1 {
 
 .about_main {
   object-fit: cover;
-  background-image: url("about_prew.aa2de653.png");
+  background-image: url("howPrew.2c9f989c.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -545,13 +546,29 @@ h1 {
   display: grid;
 }
 
+.about__prev {
+  display: flex;
+  position: relative;
+}
+
+.about__prev > img {
+  width: 100%;
+}
+
 .about__grid__col {
+  background-image: url("men.056d4810.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 538px;
   display: flex;
   position: relative;
 }
 
 .about__grid__col img {
-  width: 100%;
+  width: 195px;
+  height: 195px;
 }
 
 .logo__overlay {
@@ -1352,11 +1369,6 @@ h1 {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
     gap: 50px;
-  }
-
-  .about__grid__col img {
-    width: 80%;
-    margin: 0 auto;
   }
 
   .about__content {

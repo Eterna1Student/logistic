@@ -636,18 +636,26 @@ function success() {
         successmsg.style.visibility = "hidden";
     }, 3000);
 }
-let btnOpen = document.querySelector("openmodal");
+let btnOpen = document.querySelector(".openmodal");
 let overlayBg = document.querySelector(".overlay__wrapper");
 let modalOverlay = document.querySelector(".overlay");
 let btnClose = document.querySelector(".close");
-function openMdalOverlay() {
+function openModalOverlay() {
     modalOverlay.classList.remove("hidden_overlay");
     overlayBg.classList.remove("hidden_overlay");
 }
-btnOpen.addEventListener("click", openMdalOverlay);
-btnClose.addEventListener("click", ()=>{
+btnOpen && btnOpen.addEventListener("click", openModalOverlay);
+btnClose && btnClose.addEventListener("click", ()=>{
     modalOverlay.classList.add("hidden_overlay");
     overlayBg.classList.add("hidden_overlay");
+});
+const sendEmail = document.getElementById("emailSubmit");
+sendEmail.addEventListener("click", ()=>{
+    const message = document.querySelector(".newsletter-success");
+    message.classList.remove("newsletter-hidden");
+    setTimeout(()=>{
+        message.classList.add("newsletter-hidden");
+    }, 3000);
 });
 
 },{"@emailjs/browser":"kbSqr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kbSqr":[function(require,module,exports) {
