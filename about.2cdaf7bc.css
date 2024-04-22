@@ -403,13 +403,18 @@ h1 {
   display: flex;
 }
 
-.num p, .num2 p {
+.num p {
   margin-bottom: 0;
 }
 
+.num2 p {
+  margin-bottom: 0;
+  font-family: Marcellus SC, serif;
+}
+
 .footer__smalltext {
-  font-family: Megrim, sans-serif;
-  font-size: 8px;
+  font-family: Marcellus SC, serif;
+  font-size: 10px;
   font-style: normal;
   font-weight: 500;
   line-height: 9px;
@@ -852,9 +857,9 @@ h1 {
   font-family: Marcellus SC, serif !important;
 }
 
-.form-label-check span {
-  text-decoration: underline;
+.form-label-check a, .modal__checkbox > a {
   font-family: Marcellus SC, serif !important;
+  text-decoration: underline !important;
 }
 
 .success {
@@ -1045,7 +1050,7 @@ h1 {
   background-color: #f6f3ee;
   width: 100%;
   max-width: 1129px;
-  height: auto;
+  height: 90%;
   padding: 40px;
   position: fixed;
   top: 50px;
@@ -1111,6 +1116,8 @@ h1 {
   width: 50%;
   height: 100%;
   padding-left: 85px;
+  font-family: Marcellus SC, serif;
+  font-size: 16px;
 }
 
 .modal__inputs > input::placeholder {
@@ -1217,7 +1224,7 @@ h1 {
   cursor: pointer;
   background: #f6f3ee url("check.e2af3785.svg") 0% no-repeat;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   width: 51%;
   height: 77px;
   font-family: Marcellus SC;
@@ -1234,6 +1241,7 @@ h1 {
 
 .modal__checkbox > input {
   visibility: hidden;
+  margin-left: 24px;
 }
 
 .modal__tel {
@@ -1294,6 +1302,11 @@ h1 {
   .header__logo {
     transform: translate(0, 18px);
   }
+
+  .imageglobe {
+    width: 335px;
+    height: 323px;
+  }
 }
 
 @media (width <= 1200px) {
@@ -1323,6 +1336,12 @@ h1 {
   .large_text_logo {
     font-size: 100px;
     line-height: 100%;
+  }
+
+  .imageglobe {
+    width: 235px;
+    height: 223px;
+    top: 32%;
   }
 }
 
@@ -1378,9 +1397,17 @@ h1 {
   .logo__overlay {
     top: calc(50% - 173px);
   }
+
+  .imageglobe {
+    display: none;
+  }
 }
 
 @media (width <= 690px) {
+  .contacts {
+    margin-top: 90px;
+  }
+
   .header__logo {
     width: 100%;
   }
@@ -1434,6 +1461,60 @@ h1 {
 
   .modal__cubTitles > h5:last-child {
     display: none;
+  }
+}
+
+@media (width <= 435px) {
+  h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .about_main div h1 {
+    margin-top: 310px;
+  }
+
+  .about_main div p {
+    font-size: 18px;
+  }
+
+  .hero__content__wrapper > p {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .svg {
+    right: 34%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .footer__logo {
+    margin-bottom: 25px;
+  }
+
+  .right__col, .footer__nav {
+    align-items: center;
+  }
+
+  .contacts {
+    padding-bottom: 130px;
+  }
+
+  .nav__links {
+    align-items: center;
+  }
+
+  .nav__links > li {
+    text-align: center;
+  }
+
+  .nav__links > li > a {
+    text-align: center;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=about.2cdaf7bc.css.map */

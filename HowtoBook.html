@@ -105,7 +105,7 @@
               <line x1="23" y1="27.5" x2="1" y2="27.5" stroke="black"></line>
             </svg>
             <label for="from"></label>
-            <input type="text" id="from" placeholder="From">
+            <input type="text" class="from" id="from" placeholder="From">
           </div>
           <div class="input__group">
             <svg width="24" height="28" viewbox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +115,7 @@
               <line x1="23" y1="27.5" x2="1" y2="27.5" stroke="black"></line>
             </svg>
             <label for="to"></label>
-            <input type="text" id="to" placeholder="To">
+            <input type="text" class="to" id="to" placeholder="To">
           </div>
           <button class="search__btn form__btn">Next</button>
         </form>
@@ -179,14 +179,14 @@
           </div>
         </h4>
         <form action="#">
-          <div class="modal__inputs">
-            <input class="input__truck" id="fromInput" type="text" placeholder="From">
-            <input class="input__truck" id="toInput" type="text" placeholder="To">
+          <div class="modal__inputs" id="flight_box">
+            <input class="input__truck from" id="fromInput" type="text" placeholder="From">
+            <input class="input__truck to" id="toInput" type="text" placeholder="To">
           </div>
 
           <div class="modal__btns">
-            <button class="modal__btn">+ ADD FLIGHTS</button>
-            <button class="modal__btn modal__btn_green">DELETE FLIGHTS</button>
+            <button class="modal__btn" id="add_flights">+ ADD FLIGHTS</button>
+            <button class="modal__btn modal__btn_green" id="remove_flights">DELETE FLIGHTS</button>
           </div>
 
           <div class="modal__cubTitles">
@@ -212,7 +212,7 @@
           <div class="modal__inputs">
             <label class="modal__checkbox">
               <input type="checkbox" id="check">
-              I AGREE TO THE TERMS AND CONDITIONS
+              I AGREE TO THE <a href="/privacy.html">TERMS AND CONDITIONS</a>
             </label>
             <input class="modal__tel" id="phoneInput" type="tel" placeholder="Phone*">
           </div>
