@@ -115,6 +115,10 @@ h1 {
   line-height: 50px;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .hero__content__wrapper p {
   text-align: center;
   color: #fff;
@@ -1321,10 +1325,6 @@ h1 {
     order: 1;
   }
 
-  .hero__link {
-    order: 3;
-  }
-
   .footer__nav li a {
     font-size: 32px;
   }
@@ -1404,6 +1404,10 @@ h1 {
 }
 
 @media (width <= 690px) {
+  header {
+    position: static;
+  }
+
   .contacts {
     margin-top: 90px;
   }
