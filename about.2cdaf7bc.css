@@ -492,6 +492,20 @@ main {
   display: flex;
 }
 
+.htb_main_prev {
+  object-fit: cover;
+  background-image: url("howPrew.2c9f989c.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 621px;
+  display: flex;
+}
+
 .scrolldown-box {
   background: url("arrowDown.de757de6.svg") center no-repeat;
 }
