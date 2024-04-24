@@ -152,7 +152,7 @@ main {
   max-width: 1200px;
   display: flex;
   position: absolute;
-  bottom: -30px;
+  bottom: -38px;
   right: 50%;
   transform: translateX(50%);
 }
@@ -384,8 +384,7 @@ main {
   width: 100%;
   max-width: 1409px;
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 38px;
+  padding: 80px 15px 38px;
   display: flex;
 }
 
@@ -499,7 +498,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 621px;
@@ -1316,6 +1315,13 @@ main {
   }
 }
 
+@media (width <= 1440px) {
+  .large_text_logo {
+    text-align: center;
+    font-size: 130px;
+  }
+}
+
 @media (width <= 1350px) {
   .header__logo {
     transform: translate(0, 18px);
@@ -1340,7 +1346,7 @@ main {
   }
 
   .footer__nav li a {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   .right__col {
@@ -1415,6 +1421,10 @@ main {
   .imageglobe {
     display: none;
   }
+
+  .large_text_logo {
+    font-size: 65px;
+  }
 }
 
 @media (width <= 690px) {
@@ -1422,16 +1432,8 @@ main {
     position: static;
   }
 
-  .contacts {
-    margin-top: 90px;
-  }
-
   .header__logo {
     width: 100%;
-  }
-
-  .large_text_logo {
-    display: none;
   }
 
   .features__grid {
@@ -1480,25 +1482,37 @@ main {
   .modal__cubTitles > h5:last-child {
     display: none;
   }
+
+  .secondary_btn {
+    margin-right: 20px;
+    padding: 22px 45px;
+  }
+
+  .large_text_logo {
+    font-size: 45px;
+  }
 }
 
 @media (width <= 435px) {
   h1 {
     text-align: center;
     font-size: 30px;
+    line-height: 130%;
   }
 
   .about_main div h1 {
-    margin-top: 310px;
+    margin-top: 275px;
   }
 
   .about_main div p {
+    margin-bottom: 18px;
     font-size: 18px;
   }
 
   .hero__content__wrapper > p {
     width: 95%;
     font-size: 16px;
+    line-height: 140%;
   }
 
   .svg {
@@ -1537,6 +1551,23 @@ main {
 
   .shippinginfo h2 {
     font-size: 54px;
+  }
+
+  .about_main > div > h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+  }
+
+  .left__col {
+    width: 100%;
+  }
+
+  .secondary__btn__small {
+    margin: 59px 10px 0;
+  }
+
+  .hero {
+    background-position-x: -200px;
   }
 }
 /*# sourceMappingURL=about.2cdaf7bc.css.map */
