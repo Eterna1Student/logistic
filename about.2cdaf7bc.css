@@ -361,7 +361,7 @@ main {
   color: #fff;
   width: 100%;
   font-family: Megrim, sans-serif;
-  font-size: 158px;
+  font-size: 138px;
   font-style: normal;
   font-weight: 500;
   line-height: 185px;
@@ -1318,7 +1318,7 @@ main {
 @media (width <= 1440px) {
   .large_text_logo {
     text-align: center;
-    font-size: 120px;
+    font-size: 125px;
   }
 }
 
